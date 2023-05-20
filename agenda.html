@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Posters</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="css/style.css">
+<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body, html {
+  height: 100%;
+  line-height: 1.8;
+  background-color: whitesmoke;
+}
+</style>
+</head>
+<body>
+
+
+<!-- Navbar (sit on top) -->
+<!-- Sidebar (hidden by default) -->
+<nav class="w3-sidebar w3-bar-block w3-card w3-top w3-xlarge w3-animate-left" style="display:none;z-index:2;width:10%;min-width:200px" id="mySidebar">
+    <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button">Home</a>
+    <a href="agenda.html" class="w3-bar-item w3-button">Agenda</a>
+    <a href="posters.html" class="w3-bar-item w3-button">Posters</a>
+    <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button">Close Menu</a>
+</nav>
+  
+  <!-- Top menu -->
+  <div class="w3-top">
+    <div class="w3-xlarge">
+      <div class="w3-button w3-padding-16 w3-left" onclick="w3_open()">☰</div>
+    </div>
+  </div>
+
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:1100px">
+
+<!--Agendas-->
+
+<div class="w3-row w3-padding-64" id="about">
+    <img src="assets/agenda1.jpg" class="modal-target w3-round w3-image w3-opacity-min" alt="Img 3">
+</div>
+<hr>
+
+<div class="w3-row w3-padding-64" id="about">
+    <img src="assets/agenda2.jpg" class="modal-target w3-round w3-image w3-opacity-min" alt="Img 3">
+</div>
+
+<hr>
+
+
+
+<!-- End page content -->
+
+</body>
+
+<script src = "js/jquery.js"></script>
+<script src = "js/javascript.js"></script>
+</html>
