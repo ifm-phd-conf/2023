@@ -1,0 +1,818 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Posters</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="css/style.css">
+<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body, html {
+  height: 100%;
+  line-height: 1.8;
+  background-color: whitesmoke;
+}
+</style>
+</head>
+<body>
+
+
+<!-- Navbar (sit on top) -->
+<!-- Sidebar (hidden by default) -->
+<nav class="w3-sidebar w3-bar-block w3-card w3-top w3-xlarge w3-animate-left" style="display:none;z-index:2;width:10%;min-width:200px" id="mySidebar">
+    <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button">Home</a>
+    <a href="posters.html" class="w3-bar-item w3-button">Posters</a>
+    <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button">Close Menu</a>
+</nav>
+  
+  <!-- Top menu -->
+  <div class="w3-top">
+    <div class="w3-xlarge">
+      <div class="w3-button w3-padding-16 w3-left" onclick="w3_open()">☰</div>
+    </div>
+  </div>
+
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:1100px">
+
+  <!-- Alex Concliff -->
+
+  <div class="w3-row w3-padding-64" id="about">
+    <div class="w3-col m6 w3-padding-large w3-hide-small">
+     <img src="assets/alex_coniff.jpg" class="modal-target w3-round w3-image w3-opacity-min" alt="Img 3" width="600" height="750">
+    </div>
+
+    <div class="w3-col m6 w3-padding-large">
+      <h2 class="w3-center">Engineering in Extreme Environments</h2><br>
+      <h5 class="w3-center"><a href="https://www.ifm.eng.cam.ac.uk/people/ajc367/" target="_blank">Alex Coniff</a></h5>
+      <p class="w3-large">Construction in remote locations is characteristically a challenging enterprise fraught with complexities that can detrimentally affect maintaining budget limitations and meeting planned timeframes. The causes can be multifaceted...</p>
+
+      <button class="button button1" onclick="alex_abstract_open()">Read More</button>
+
+      <div id="alex_abstract" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="alex_abstract_close()">&times;</a>
+        <div class="overlay-content">
+            <p><class="w3-large" style="color: white">
+              
+            <b><span style="text-transform:uppercase">Engineering in Extreme Environments</span></b><br><br>
+
+            Construction in remote locations is characteristically a challenging enterprise fraught with complexities that can detrimentally affect maintaining budget limitations and meeting planned timeframes. The causes can be multifaceted, from material and labour scarcity to hostile climate and protracted supply chains meaning that effective mitigation is demanding (McAnulty and Baroudi, 2010). However, despite these challenges delivering appropriate construction in adverse environments remains an essential requirement for military operations, humanitarian efforts, isolated populations and research stations worldwide. The study's sample group will be Antarctic research stations undergoing a phase of modernisation development, all of which have comparable scale and architectural similarities. The contrast from other examples of remote construction work, such as military forward operating bases, disaster relief camps and isolated rural communities, will be used to identify common barriers and discern if there are opportunities for innovation through a networked analysis of how others manage and deliver their projects.<br><br>
+            
+            This research aims to develop a conceptual model of practice for expeditionary construction projects where effective technology management and programme delivery tools can diagnose recurrent challenges, develop strategies and engender successful project delivery. Reflecting on a combination of methods will inform the basis of this thesis. Firstly, a series of semi-structured workshop-based interviews with programme and project managers from the selected sample group will be used to establish how effective the implementation of management tools and delivery strategies has been thus far. Subsequent use of this model will inform an element of active research to be undertaken in early 2024 at Rothera Research Station. A small construction project will utilise the model to aid in refining the conclusions before returning to Cambridge. The results will then be presented to the sample group in a series of wash-up interviews before completing the write-up of the findings and research recommendations.</p>
+            
+        </div>
+      </div>
+
+    </div>
+  </div>
+  
+  <hr>
+
+    <!-- Stefan Schopf -->
+
+    <div class="w3-row w3-padding-64" id="about">
+      <div class="w3-col m6 w3-padding-large w3-hide-small">
+       <img src="assets/stefan_schopf.jpg" class="modal-target w3-round w3-image w3-opacity-min" alt="Img 3" width="600" height="750">
+      </div>
+  
+      <div class="w3-col m6 w3-padding-large">
+        <h2 class="w3-center">Balancing Local and Global Objectives in End-to-end Supply Chains with Cooperative AI</h2><br>
+        <h5 class="w3-center"><a href="https://www.ifm.eng.cam.ac.uk/people/ss2823/" target="_blank">Stefan Schöpf</a></h5>
+        <p class="w3-large">Supply Chain Management (SCM) is increasingly leveraging Artificial Intelligence (AI) applications for tasks such as inventory management. While these AI applications have the potential to improve upon established operations research methods, a fundamental problem remains: Each company optimises their processes...</span> </p>
+
+        <button class="button button1" onclick="stefan_abstract_open()">Read More</button>
+  
+        <div id="stefan_abstract" class="overlay">
+          <a href="javascript:void(0)" class="closebtn" onclick="stefan_abstract_close()">&times;</a>
+          <div class="overlay-content">
+              <p><class="w3-large" style="color: white">
+                
+              <b><span style="text-transform:uppercase">Balancing Local and Global Objectives in End-to-end Supply Chains with Cooperative AI</span></b><br><br>
+  
+              Supply Chain Management (SCM) is increasingly leveraging Artificial Intelligence (AI) applications for tasks such as inventory management. While these AI applications have the potential to improve upon established operations research methods, a fundamental problem remains: Each company optimises their processes for their local optimum rather than the global optimum of the whole end-to-end supply chain (SC). Consequently, this leads to systemic issues such as reduced efficiency and resilience. The solution lies in companies collaborating and making trade-offs at the individual level to move towards a system-level optimum. These trade-offs can be compensated for as the overall value of the supply chain increases, leading to a win-win situation. However, achieving end-to-end SC optimisation is fraught with difficulties such as scalability, data privacy concerns, unknown interdependencies, and the self-interest of all parties involved. We believe that AI, with its ability to learn and adapt to novel problem settings, can overcome these issues that hinder traditional operations research methods from achieving global optima in SC.<br>
+              The first step towards achieving a global optimum is to determine whose actions impact whom along the supply chain. Uncovering these dependencies in a scalable and privacy preserving matter is an open problem. We propose a decentralised contribution estimation method using neural network ensemble uncertainty to uncover and quantify these dependencies. The approach is validated with a case study using real-life data from a multi-stage manufacturing process that represents the echelons of a supply chain.<br>
+              Once we have identified the SC dependencies between actors, trade-off solutions can be negotiated as the next step. There are currently no existing frameworks to automatically determine and negotiate beneficial process changes in a self-interested supply chain that take into consideration individual as well as systemic outcomes. We propose a Multi-Agent Reinforcement Learning framework in which each company is represented by an autonomous agent. The developed framework will be validated with use cases from SCM.</p>
+              
+          </div>
+        </div>
+  
+      </div>
+    </div>
+    
+    <hr>
+
+<!-- Bethan Moncur -->
+
+<div class="w3-row w3-padding-64" id="about">
+  <div class="w3-col m6 w3-padding-large w3-hide-small">
+   <img src="assets/bethan_moncur.jpg" class="modal-target w3-round w3-image w3-opacity-min" alt="Img 3" width="600" height="750">
+  </div>
+
+  <div class="w3-col m6 w3-padding-large">
+    <h2 class="w3-center">Integrating Multiple Perspectives in Technology Management Decisions</h2><br>
+    <h5 class="w3-center"><a href="https://www.ifm.eng.cam.ac.uk/people/bam49/" target="_blank">Bethan Moncur</a></h5>
+    <p class="w3-large">Technology management decisions involve balancing technological considerations with wider business objectives in an operating environment that is complex, uncertain, and dynamic. This requires effective integration of information from multiple sources...</p>
+
+    <button class="button button1" onclick="bethan_abstract_open()">Read More</button>
+
+    <div id="bethan_abstract" class="overlay">
+      <a href="javascript:void(0)" class="closebtn" onclick="bethan_abstract_close()">&times;</a>
+      <div class="overlay-content">
+          <p><class="w3-large" style="color: white">
+            
+          <b><span style="text-transform:uppercase">Integrating Multiple Perspectives in Technology Management Decisions</span></b><br><br>
+
+          <b>Background and motivation.</b>Technology management decisions involve balancing technological considerations with wider business objectives in an operating environment that is complex, uncertain, and dynamic. This requires effective integration of information from multiple sources and perspectives, such as within and across business functions (Cetindamar et al., 2016). However, integrating diverse perspectives can be challenging due to knowledge boundaries between actors, which arise due to differences in domain-knowledge, task-orientation, individual experiences, and spatio-temporal orientation (Tell, 2016).<br><br>
+
+          <b>Research focus.</b> This research explores approaches to integrate perspectives across knowledge boundaries in organisational technology management decision-making. Specifically, it focuses on the use of visual artefacts to represent data, information, and knowledge in decision-making about manufacturing process technologies.<br><br>
+
+          <b>Approach.</b> Insights from management literature will be complemented by investigating how decision-making about process technologies occurs in manufacturing organisations. This will involve exploratory semi-structured interviews with industry professionals involved in manufacturing process innovation. The aim is to elicit their approaches to integrating multiple perspectives into decision-making processes, and the challenges that occur. Future stages of the research will explore how these challenges can be overcome. This will involve data collection (such as observations and interviews) from a food-manufacturing company as they develop automation strategies in each of their businesses.<br><br>
+
+          <b>References</b>
+          Cetindamar, D., Phaal, R., & Probert, D. (2016). Technology Management Activities and Tools (2nd ed.). Red Globe Press.<br>
+          Tell, F. (2016). Managing across Knowledge Boundaries. In Managing Knowledge Integration Across Boundaries (pp. 19–38). Oxford University Press. https://doi.org/10.1093/acprof:oso/9780198785972.003.0002</p>
+          
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<hr>
+
+<!-- Paul Zuercher -->
+
+<div class="w3-row w3-padding-64" id="about">
+  <div class="w3-col m6 w3-padding-large w3-hide-small">
+   <img src="assets/paul_zuercher.jpg" class="modal-target w3-round w3-image w3-opacity-min" alt="Img 3" width="600" height="750">
+  </div>
+
+  <div class="w3-col m6 w3-padding-large">
+    <h2 class="w3-center">Optimising Immersive Assistance Systems for Managing Automated Manufacturing Operations with Limited Resources</h2><br>
+    <h5 class="w3-center"><a href="https://www.ifm.eng.cam.ac.uk/people/pdz20/" target="_blank">Paul-David Zuercher</a></h5>
+    <p class="w3-large">In the face of global events such as the COVID-19 pandemic, geopolitical conflicts, and climate change, companies are struggling to adapt their manufacturing procedures to resource shortages and volatile supply chains. Automation has emerged as a solution to these challenges... </p>
+
+    <button class="button button1" onclick="paul_abstract_open()">Read More</button>
+
+    <div id="paul_abstract" class="overlay">
+      <a href="javascript:void(0)" class="closebtn" onclick="paul_abstract_close()">&times;</a>
+      <div class="overlay-content">
+          <p><class="w3-large" style="color: white">
+            
+          <b><span style="text-transform:uppercase">Optimising Immersive Assistance Systems for Managing Automated Manufacturing Operations with Limited Resources</span></b><br><br>
+
+          In the face of global events such as the COVID-19 pandemic, geopolitical conflicts, and climate change, companies are struggling to adapt their manufacturing procedures to resource shortages and volatile supply chains. Automation has emerged as a solution to these challenges, providing flexibility, improved control over processes, and scalability. However, implementing automations in work environments can radically change the nature of work and critical actions. Augmented reality (AR) and Virtual reality (VR) can help workers analyse the automation and capabilities and automation affordances. Paul’s research aims to advance the field of virtual production systems, building on digital twins and AR/VR augmentation designs. The results of this research will help enterprises to identify optimal configurations and adapt to today’s resource limited economies.</p>
+          
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<hr>
+
+<!-- Geoffrey White -->
+
+<div class="w3-row w3-padding-64" id="about">
+  <div class="w3-col m6 w3-padding-large w3-hide-small">
+   <img src="assets/geoffrey_white.jpg" class="modal-target w3-round w3-image w3-opacity-min" alt="Img 3" width="600" height="750">
+  </div>
+
+  <div class="w3-col m6 w3-padding-large">
+    <h2 class="w3-center">Strategic Decisions During Patent Preparation and Prosecution Potentially Leading to Different Firm-Level Outcomes</h2><br>
+    <h5 class="w3-center"><a href="https://www.ifm.eng.cam.ac.uk/people/gw428/" target="_blank">Geoffrey White</a></h5>
+    <p class="w3-large">On a firm-level, which decisions during patent preparation and prosecution lead to long-term favourable business outcomes, such as maximum revenue growth or greatest market share? Patent preparation involves interaction...</p>
+
+    <button class="button button1" onclick="geoffrey_abstract_open()">Read More</button>
+
+    <div id="geoffrey_abstract" class="overlay">
+      <a href="javascript:void(0)" class="closebtn" onclick="geoffrey_abstract_close()">&times;</a>
+      <div class="overlay-content">
+          <p><class="w3-large" style="color: white">
+            
+          <b><span style="text-transform:uppercase">Strategic Decisions During Patent Preparation and Prosecution Potentially Leading to Different Firm-Level Outcomes</span></b><br><br>
+
+          <b>Introduction</b><br><br>
+          On a firm-level, which decisions during patent preparation and prosecution lead to long-term favourable business outcomes, such as maximum revenue growth or greatest market share? Patent preparation involves interaction between the patent drafter and inventor(s) to result in a document that is able to be filed as a patent application. Patent prosecution is the process of engaging with one or more patent offices in an effort to obtain one or more patents. Each include numerous decisions, and alignment between such decisions and business outcomes is an area of limited academic research, with most publications about patent preparation and prosecution decisions focusing on legal strategy and compliance with legal requirements.
+          <b>Current Research</b><br><br>
+          An initial literature review is underway on such decisions to synthesize the fragmented literature. The review indicates that the decisions along the process of obtaining patents can be split into phases: (1) decisions associated with filing a patent, (2) decisions associations with preparation techniques for a patent application, (3) decisions associated with approving the filing of a patent application, and (4) decisions associated with the prosecution of the filing to eventually obtain a granted patent.
+          <b>Future Research</b><br><br>
+          Upcoming research includes expansion of the literature review. Upon initial completion of the literature review research, patent and firm-level data will be analyzed based upon segmentation of decisions to see whether advice provided in the literature review is consistent with strategies and outcomes desired. Interviews are planned to be performed to iterate on additional decisions that were not captured.Overall,theoutcomessupportedbythedecisionswillbeanalyzedin view of operations management and innovation literature on agility, especially for innovative organizations having innovative commercialization strategies, to see whether such decisions do or do not support efforts to allow an agile business and/or innovation strategy.</p>
+          
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<hr>
+
+<!-- James Tombling -->
+
+<div class="w3-row w3-padding-64" id="about">
+  <div class="w3-col m6 w3-padding-large w3-hide-small">
+   <img src="assets/james_tombling.jpg" class="modal-target w3-round w3-image w3-opacity-min" alt="Img 3" width="600" height="750">
+  </div>
+
+  <div class="w3-col m6 w3-padding-large">
+    <h2 class="w3-center">Application of Pose Estimation in Augmented Reality for Virtual Physical Rehabilitation</h2><br>
+    <h5 class="w3-center"><a href="https://www.ifm.eng.cam.ac.uk/people/jbt34/" target="_blank">James Tombling</a></h5>
+    <p class="w3-large">Markerless motion capture is a rapidly developing area within the fields of Artificial Intelligence (AI), Machine Learning (ML) and Computer Vision (CV) with numerous applications in various industries, including entertainment, healthcare, and sports. In recent years...</p>
+
+    <button class="button button1" onclick="james_abstract_open()">Read More</button>
+
+    <div id="james_abstract" class="overlay">
+      <a href="javascript:void(0)" class="closebtn" onclick="james_abstract_close()">&times;</a>
+      <div class="overlay-content">
+          <p><class="w3-large" style="color: white">
+            
+          <b><span style="text-transform:uppercase">Application of Pose Estimation in Augmented Reality for Virtual Physical Rehabilitation</span></b><br><br>
+
+          Markerless motion capture is a rapidly developing area within the fields of Artificial Intelligence (AI), Machine Learning (ML) and Computer Vision (CV) with numerous applications in various industries, including entertainment, healthcare, and sports. In recent years, there have been significant advances in markerless motion capture technology, which have led to more accurate and efficient methods of tracking the movement of objects and people.<br><br>
+
+          This project aims to investigate the past and current state-of-the-art technologies in motion capture (MOCAP), focusing on markerless MOCAP. It will also identify areas where further research is needed, the project will begin by examining what is MOCAP? It will then review the various applications of markerless motion capture, including its application in different industries. Finally, this project will identify the challenges and limitations of past and present markerless motion tracking and suggest potential directions for future research. The goal is to provide a comprehensive overview of markerless motion tracking and to shed light on the exciting potential of this technology.</p>
+          
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<hr>
+
+
+
+  <!-- Garry Clawson -->
+
+  <div class="w3-row w3-padding-64" id="about">
+    <div class="w3-col m6 w3-padding-large w3-hide-small">
+     <img src="assets/garry_clawson.jpg" class="modal-target w3-round w3-image w3-opacity-min" alt="Img 1"width="600" height="750">
+    </div>
+
+    <div class="w3-col m6 w3-padding-large">
+      <h2 class="w3-center">Designing Food Supply Chain for Nutritional Delivery & Traceability</h2><br>
+      <h5 class="w3-center"><a href="https://www.ifm.eng.cam.ac.uk/people/gc673/" target="_blank">Garry Clawson</a></h5>
+      <p class="w3-large">This PhD research focuses on developing and understanding relationships between supply chain design and product functionality within the context of food supply chain and nutrition. Since the green revolution food supply chain management has focused...</p>
+
+      <button class="button button1" onclick="garry_abstract_open()">Read More</button>
+
+    
+
+      <div id="garry_abstract" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="garry_abstract_close()">&times;</a>
+        <div class="overlay-content">
+            <p><class="w3-large" style="color: white">
+                
+            <b><span style="text-transform:uppercase">Designing Food Supply Chain for Nutritional Delivery & Traceability</span></b><br><br>
+                
+            This PhD research focuses on developing and understanding relationships between supply chain design and product functionality within the context of food supply chain and nutrition.Since the green revolution food supply chain management has focused on the delivery and traceability of volume rather than functionality in this case nutrition. Academic literature is limited on how to design a supply chain from a product functionality perspective. Extant literature suggests artificial intelligence, industry 4.0, to blockchain technology, will provide new archetypes for supply chain design, however limited attention is given to the trifactor of societal, technological, and legal paradigms that historically forces incremental and linear implementation. This leads to several global problems: 3 billion people cannot afford a healthy diet; over 30% of the world’s population are anemic; and obesity has tripled since 1975 to over 2.6 billion people; and global per person food volume production exceeds the total required by over 20%. This leads to a global paradox of undernourishment and overproduction. Combining these paradoxes, the theoretical challenge of unlinked supply chain design with product functionality this research aims to address the following question: “How can supply chain be designed to deliver product functionality?”. To address this question, three steps have been developed, firstly, identifying the design factors needed to transition from volume delivery to functionality delivery. Secondly, understanding the role of technologies required for the traceability of product functionality in an end-to- end supply chain, and thirdly, developing a supply chain design taxonomy that supports different types of functionality configuration. These steps follow a mixed method approach extending on supply chain configuration theory. Case studies involving semi structured interviews will be used to identify current supply chain structures. Next, supply chain mapping to identify material and information flows paying particular attention to traceability of functionality; finally, a digital demonstrator will be developed using the completed maps and secondary data to present novel functionality supply chain configurations. The theoretical contribution of this work will extend supply chain design from product volume to product functionality and extend the taxonomy for food supply chain design involving digital technologies.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  
+  <hr>
+
+  <!-- Benson Law -->
+
+  <div class="w3-row w3-padding-64" id="about">
+    <div class="w3-col m6 w3-padding-large w3-hide-small">
+     <img src="assets/benson_chun.jpg" class="modal-target w3-round w3-image w3-opacity-min" alt="Img 1"width="600" height="750">
+    </div>
+
+    <div class="w3-col m6 w3-padding-large">
+      <h2 class="w3-center">Ultra-fast Pulsed Laser Deposition (UF-PLD) of Thin Films for Application in Air-Breathing Electric Propulsion</h2><br>
+      <h5 class="w3-center"><a href="https://www.ifm.eng.cam.ac.uk/people/cpl38/" target="_blank">Bensun Chun Pang Law</a></h5>
+      <p class="w3-large">Air-breathing electric propulsion (ABEP) is an intriguing key technology that can be used to achieve very low Earth orbits for low latency communications or more comprehensive Earth observation. The term "air-breathing electric propulsion" refers...</p>
+
+      <button class="button button1" onclick="benson_abstract_open()">Read More</button>
+
+      <div id="benson_abstract" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="benson_abstract_close()">&times;</a>
+        <div class="overlay-content">
+            <p><class="w3-large" style="color: white">
+                
+            <b><span style="text-transform:uppercase">Ultra-fast Pulsed Laser Deposition (UF-PLD) of Thin Films for Application in Air-Breathing Electric Propulsion</span></b><br><br>
+                
+            Air-breathing electric propulsion (ABEP) is an intriguing key technology that can be used to achieve very low Earth orbits for low latency communications or more comprehensive Earth observation. The term "air-breathing electric propulsion" refers to an electric-propulsion system that utilises the atmosphere as a propellant source and not a stored reservoir. Accurately optimising air-based plasma chemistry is critical for optimising ABEP technology.<br><br>
+
+            In this report, using a state-of-the-art ultra-fast (UF) femtosecond pulse laser, we validated and improved the ABEP system by inducing an ablation at a very high repetition rate of 50MHz to coat the interior core of the ABEP thruster surface at nm scale. When the UF-PLD coating is in a passive state, the relative speed of particles in upper orbit and their collision with the UF-PLD coatings is used to ionise the air particle via surface ionisation and act as a much stronger thruster. This could eliminate the need for an active ionisation stage and drastically lower the satellite's power consumption.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  
+  <hr>
+
+  <!-- Mariel Alem -->
+
+  <div class="w3-row w3-padding-64" id="about">
+    <div class="w3-col m6 w3-padding-large w3-hide-small">
+     <img src="assets/mariel_alem.jpg" class="modal-target w3-round w3-image w3-opacity-min" alt="Img 2" width="600" height="750">
+    </div>
+
+    <div class="w3-col m6 w3-padding-large">
+      <h2 class="w3-center">Evaluating Emerging Food Supply Chains from a Resilience and Cost Perspective: A Study on the Alternative Protein Industry</h2><br>
+      <h5 class="w3-center"><a href="https://www.ifm.eng.cam.ac.uk/people/ma810/" target="_blank">Mariel Alem Fonseca</a></h5>
+      <p class="w3-large">This study aims to examine the relationship between resilience and cost across the dimension of sustainability (i.e., economic, environmental, societal) in alternative protein supply chains (SCs). Our global food system is on the cusp of transformation...</p>
+
+      <button class="button button1" onclick="mariel_abstract_open()">Read More</button>
+
+      <div id="mariel_abstract" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="mariel_abstract_close()">&times;</a>
+        <div class="overlay-content">
+            <p><class="w3-large" style="color: white">
+                
+            <b><span style="text-transform:uppercase">Evaluating Emerging Food Supply Chains from a Resilience and Cost Perspective: A Study on the Alternative Protein Industry</span></b><br><br>
+            
+            This study aims to examine the relationship between resilience and cost across the dimension of sustainability (i.e., economic, environmental, societal) in alternative protein supply chains (SCs). Our global food system is on the cusp of transformation, with new SCs emerging. Traditional food SCs are already inefficient, unsustainable and prone to disruptions. Thus, if these issues are not solved, emerging food SCs will face the same challenges. Hence this research focuses on emerging and evolving food SCs such as alternative proteins SCs.<br>
+
+            Developing resilience in food SCs is critical, but it may come at a cost. Emerging food SCs in particular, must balance cost-effectiveness and resilience to succeed in a competitive and disruptive environment. While reducing costs is critical to compete in the market, ensuring resilience is essential to withstand disruptions. However, it is widely reported that resilience is expensive, which has led companies to think that they cannot afford it. This perception may be rooted on the limited understanding of the relationship between cost and resilience, and the little guidance companies have on how to evaluate their SC resilience level. <br>
+    
+            Therefore, this research addresses the following research question: “How do companies manage the trade-offs between resilience and cost in the context of emerging food SCs?”. In order to address this question, a research process is designed that involves three stages: (i) a critical literature review to develop a conceptual framework for evaluating the level of SC resilience and cost; (ii) qualitative case-based research and model development; and (iii) a quantitative approach involving system dynamics modelling to simulate different scenarios and test SC resilience under different types of stress. <br>
+
+            The outcome of this research will include a resilience stress-testing framework to evaluate the performance of SCs on multiple performance dimensions, and trade-offs analyses between resilience and cost which will assist companies in their SC management and decision-making processes. This research will also define the level of resilience for SCs based on the previous two expected outcomes. This study aims to contribute to SC resilience theories by bringing three concepts: cost of resilience, level of resilience, and stress-testing approach. There will be findings that have not been yet conceptualised in the context of alternative protein supply chain design.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  
+  <hr>
+
+  <!-- Edward Saunders -->
+
+  <div class="w3-row w3-padding-64" id="about">
+    <div class="w3-col m6 w3-padding-large w3-hide-small">
+     <img src="assets/edward_saunders.jpg" class="modal-target w3-round w3-image w3-opacity-min" alt="Img 1"width="600" height="750">
+    </div>
+
+    <div class="w3-col m6 w3-padding-large">
+      <h2 class="w3-center">Shining a Light on Redox Flow Battery Electrodes</h2><br>
+      <h5 class="w3-center"><a href="https://www.ifm.eng.cam.ac.uk/people/es758/" target="_blank">Edward Saunders</a></h5>
+      <p class="w3-large">Having emerged as a cheap and renewable source of energy, the increasing use of solar and wind energy presents issues to electricity grids and other practical stationary deployments due to their intermittency. Thanks to their ability to store energy...</p>
+
+      <button class="button button1" onclick="edward_abstract_open()">Read More</button>
+
+      <div id="benson_abstract" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="benson_abstract_close()">&times;</a>
+        <div class="overlay-content">
+            <p><class="w3-large" style="color: white">
+                
+            <b><span style="text-transform:uppercase">Shining a Light on Redox Flow Battery Electrodes</span></b><br><br>
+                
+            Having emerged as a cheap and renewable source of energy, the increasing use of solar and wind energy presents issues to electricity grids and other practical stationary deployments due to their intermittency. Thanks to their ability to store energy in liquid electrolytes, redox flow batteries (RFBs) can store electrolytes in external tanks for energy storage and pump the electrolytes through a reactor stack to exchange energy when needed. Consequently, RFBs can independently scale power and energy to meet stationary storage needs with low levelized costs of storage. Crucial to the performance of the reactor stack are the electrodes, and electrode development has great scope to further reduce overall system cost. Graphite felt electrodes have previously been thermally treated, chemically etched, and decorated with metal oxides for RFBs based on various different redox active species. However, electrode development for aqueous organic RFBs has not been well explored. By modifying the electrodes, the energy conversion efficiency of systems can be improved by engineering interfaces at the nanoscale and directly harvesting solar energy to aid reaction kinetics. With this work, achieving low-cost round-trip utilisation of intermittent renewable energy for microgrids is targeted.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  
+  <hr>
+
+<!-- Wei Nie -->
+
+<div class="w3-row w3-padding-64" id="about">
+  <div class="w3-col m6 w3-padding-large w3-hide-small">
+   <img src="assets/wei_nie.jpg" class="modal-target w3-round w3-image w3-opacity-min" alt="Img 3" width="600" height="750">
+  </div>
+
+  <div class="w3-col m6 w3-padding-large">
+    <h2 class="w3-center">Study of Supply Chain Blind Spots: Publicly Available Data, Data Translation & Big Data Analytics</h2><br>
+    <h5 class="w3-center"><a href="https://www.ifm.eng.cam.ac.uk/people/wn230/" target="_blank">Wei Nie</a></h5>
+    <p class="w3-large">This study explores the nature of publicly available data, data translation, big data analytics, the knowledge derived from such analytics, and their interconnections in the context of achieving supply chain visibility (SCV) to uncover the blind spots...</p>
+
+    <button class="button button1" onclick="wei_abstract_open()">Read More</button>
+
+    <div id="wei_abstract" class="overlay">
+      <a href="javascript:void(0)" class="closebtn" onclick="wei_abstract_close()">&times;</a>
+      <div class="overlay-content">
+          <p><class="w3-large" style="color: white">
+            
+          <b><span style="text-transform:uppercase">Study of Supply Chain Blind Spots: Publicly Available Data, Data Translation & Big Data Analytics</span></b><br><br>
+
+          This study explores the nature of publicly available data, data translation, big data analytics, the knowledge derived from such analytics, and their interconnections in the context of achieving supply chain visibility (SCV) to uncover the blind spots in the end- to-end supply chains (SC). Modern slavery, human trafficking, and environmental sustainability issues are becoming blind spots in the field of SC management due to the lack of SCV.<br><br>
+
+          To address this challenge, information technology companies such as Google and Microsoft are leveraging available SC data to understand what is happening in the end-to-end SCs. However, these existing digital infrastructures face the challenge of having limited data visibility into the deep tiers of the SCs. Publicly available data generated within various contexts such as climate, economics, trade, business, regulations, and finance can provide additional data relevant to SCs. This approach requires scrutiny of data translation, authenticity, timeliness, quality, and analytics within the SCV context.<br><br>
+
+          A hybrid of qualitative and quantitative research methods will be applied in three phases: (1) literature review and conceptual framework development; (2) digital infrastructure development as a demonstrator using big data analytics with publicly available data; and (3) demonstrator testing and evaluation. The research findings will provide guidance on how publicly available data from different disciplines can be translated and reused in the SC context to develop the visibility.<br>br>
+
+          Practically, the developed demonstrator can create the knowledge and data capabilities for companies, governments, and other SC stakeholders to tackle the blind spots for informing operational decisions and policymaking.</p>
+          
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<hr>
+
+
+ <!-- Josephine Tumwesige -->
+
+ <div class="w3-row w3-padding-64" id="about">
+  <div class="w3-col m6 w3-padding-large w3-hide-small">
+   <img src="assets/jospehine_tumwesige.jpg" class="modal-target w3-round w3-image w3-opacity-min" alt="Img 3" width="600" height="750">
+  </div>
+
+  <div class="w3-col m6 w3-padding-large">
+    <h2 class="w3-center">Towards Affordable Touchscreen Sensing – Linking Device Fabrication with Control of Fringe Field Interactions
+    </h2><br>
+    <h5 class="w3-center"><a href="https://www.ifm.eng.cam.ac.uk/people/jt651/" target="_blank">Josephine Tumwesige</a></h5>
+    <p class="w3-large">Touchscreen technology has become integral to our interactions with electronic devices, from smartphones and tablets to industrial control systems. Capacitive sensing, the predominant method for touchscreen sensing, relies on the principles of acapacitor. Acapacitor consists of...</p>
+
+    <button class="button button1" onclick="josephine_abstract_open()">Read More</button>
+
+    <div id="josephine_abstract" class="overlay">
+      <a href="javascript:void(0)" class="closebtn" onclick="josephine_abstract_close()">&times;</a>
+      <div class="overlay-content">
+          <p><class="w3-large" style="color: white">
+            
+          <b><span style="text-transform:uppercase">Towards Affordable Touchscreen Sensing – Linking Device Fabrication with Control of Fringe Field Interactions
+          </span></b><br><br>
+
+          Touchscreen technology has become integral to our interactions with electronic devices, from smartphones and tablets to industrial control systems. Capacitive sensing, the predominant method for touchscreen sensing, relies on the principles of a capacitor. Acapacitor consists of two metal plates separated by adielectric material, which stores an electric charge when a voltage is applied. The presence of an object, such as a finger, disrupts the electric field and alters the capacitance. Although capacitive touchscreens are widespread, further advancements are needed to adapt this technology for measurement and control applications that require more than basic ionic conductivity and capacitance measurements.<br>
+
+          This study presents an innovative approach to developing cost-effective touchscreen sensors by leveraging fringe field interactions. Utilizing a laboratory laser, we fabricated sensors on an indium tin oxide-coated glass substrate. Our findings indicate that the fabricated sensors exhibit high-sensitivity performance. To enhance accuracy, we integrated a microfluidic system and an insulating layer, facilitating analyte flow control and reducing interference from external factors and ionic conductivity.<br>
+
+          The successful incorporation of an insulating layer and microfluidics enables us to hypothesize that significant advancements in measurement and control can be achieved.Onepromising applicationofthisresearchisinwaterqualityandfertigation, where touchscreen capacitive sensors can be employed to measure nutrient and contaminant levels in soil and water. Moreover, the potential for enhancing selectivity can aid farmers in optimizing their fertigation systems by monitoring nutrient levels in water and adjusting fertilizer flow accordingly without needing standard laboratory analysis.</p>
+          
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<hr>
+
+
+<!-- Ali Niazi -->
+
+<div class="w3-row w3-padding-64" id="about">
+  <div class="w3-col m6 w3-padding-large w3-hide-small">
+   <img src="assets/ali_niazi.jpg" class="modal-target w3-round w3-image w3-opacity-min" alt="Img 3" width="600" height="750">
+  </div>
+
+  <div class="w3-col m6 w3-padding-large">
+    <h2 class="w3-center">Decision-making Framework for Combining Financial and Non-financial Interests of Impact Investors in the Context of MENA</h2><br>
+    <h5 class="w3-center"><a href="http://www.eng.cam.ac.uk/profiles/an674" target="_blank">Ali Niazi</a></h5>
+    <p class="w3-large">Social enterprises can contribute to addressing the world’s seemingly intractable problems. However, social enterprises, like traditional corporations, need capital to fuel their growth. Research suggests the lack of finance as one of the most significant barriers to the growth...</p>
+
+    <button class="button button1" onclick="ali_abstract_open()">Read More</button>   
+
+    <div id="ali_abstract" class="overlay">
+      <a href="javascript:void(0)" class="closebtn" onclick="ali_abstract_close()">&times;</a>
+      <div class="overlay-content">
+          <p><class="w3-large" style="color: white">
+            
+          <b><span style="text-transform:uppercase">Decision-making Framework for Combining Financial and Non-financial Interests of Impact Investors in the Context of MENA</span></b><br><br>
+
+          Social enterprises can contribute to addressing the world’s seemingly intractable problems. However, social enterprises, like traditional corporations, need capital to fuel their growth. Research suggests the lack of finance as one of the most significant barriers to the growth of social sector organizations. While social ventures used to be typically funded by donations or government grants, the considerable funding gap in achieving Sustainable Development Goals has given rise to innovative ways, like Impact Investing, for funding positive impact while earning financial returns. Impact investing has a dual nature, in that, the investor aims to generate an intentional measurable social impact alongside a financial return. Thus, combining both the financial and non-financial interests of investors in the process of decision-making is challenging. In contrast to financial investments in which all risks and rewards are monetized and different options get compared accordingly, not all social impacts can be monetized, nor can it capture all nuances of combing social impact into decisions. This study aims to propose a decision-making framework for effectively balancing the financial and non-financial interests of impact investors in the MENA context. For this purpose, initially, a comprehensive review of the existing literature on decision-making frameworks that balance financial and non-financial interests is conducted. In the next step, primary and secondary data will be gathered from impact investing funds within the UK to model the process of decision-making in the real world and to choose one of the globally accepted frameworks for criteria and indicators of assessing social impacts. Then, a framework will be developed based on the processed data and literature. This framework will be adjusted in the MENA region with consideration of the local institution, and specific characteristics of investors and investees in consultation with local practitioners in the region. And then the framework's feasibility, usability, and utility will be evaluated from the results of conducted pilot tests with a sample of investments and investors by using a mix of qualitative and quantitative methods. This research contributes to the advancement of knowledge and practice in the field by proposing a model that takes the effects of local context into account and adds depth to the decision-making process of impact investing, and, by disseminating research findings through academic publications, conferences, and other relevant channels. This study would aim to generate new insights, perspectives, and recommendations for scholars, practitioners, and policymakers in the MENA region and beyond.</p>
+          
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<hr>
+
+<!-- Hanu Priya Indiran -->
+
+<div class="w3-row w3-padding-64" id="about">
+  <div class="w3-col m6 w3-padding-large w3-hide-small">
+   <img src="assets/hanu_indiran.jpg" class="modal-target w3-round w3-image w3-opacity-min" alt="Img 3" width="600" height="750">
+  </div>
+
+  <div class="w3-col m6 w3-padding-large">
+    <h2 class="w3-center">Cognitive Network-based Systems Approach - To Minimise Failures in Complex Industrial Systems</h2><br>
+    <h5 class="w3-center"><a href="https://www.ifm.eng.cam.ac.uk/people/hpi20/" target="_blank">Hanu Priya Indiran</a></h5>
+    <p class="w3-large">Social enterprises can contribute to addressing the world’s seemingly intractable problems. However, social enterprises, like traditional corporations, need capital to fuel their growth. Research suggests the lack of finance as one of the most significant barriers to the growth...</p>
+
+    <button class="button button1" onclick="hanu_abstract_open()">Read More</button>   
+
+    <div id="hanu_abstract" class="overlay">
+      <a href="javascript:void(0)" class="closebtn" onclick="hanu_abstract_close()">&times;</a>
+      <div class="overlay-content">
+          <p><class="w3-large" style="color: white">
+            
+          <b><span style="text-transform:uppercase">Cognitive Network-based Systems Approach - To Minimise Failures in Complex Industrial Systems</span></b><br><br>
+
+          With developing economies and globalisation, industrial systems have evolved to be advanced yet increasingly complex. With ever-changing demands, complex industrial systems are forecasted to have a 36% increase in energy consumption by 2025[1]. A significant amount of energy is lost to operational failures and diagnostics, making them unsustainable. Industrial systems with multiple components and interactions within, give rise to complex behaviours of emergence, non-linearity and adaptability. As complex system behaviour is more than the mere sum of its individual components' behaviours, the interactions between the components (physical, informatic (process- oriented) or information exchanging) are pivotal in understanding the system. The current state-of-the-art fault diagnosis and prognosis methods are majorly focused on methods involving just the system I/O parameters or the individual components. The complex interactions between the components causing the emergent behaviour in the system are often not modelled. This remains a bottleneck in effective fault prognostics and diagnostics.<br><br>
+ 
+          This research focuses on (a) modelling the interactions between components of a complex industrial system to diagnose failures and their propagation and (b) understanding how such a model can be used to improve system performance by minimising failure propagation. The project emphasises both on acquisition and utilisation phases of the system life cycle, contrary to the majority of work published in this area.<br><br>
+
+          The key challenges are high dimensionality, non-linearity, heterogeneity, and complex interactions between components. With the high dimensionality comes the need for high- power computational resources, making the implementation arduous. To overcome these, this work proposes a cognitive network-based systems science approach. Utilizing networks will also prove to be an efficient method for understanding possible patterns within these interactions. Hypergraph models are proposed to reduce dimensionality, along with a bipartite zooming approach on faulty nodes and their interactions. Link- prediction techniques will be employed to model multi-interactions. Furthermore, ontology-based knowledge graphs will be linked to the hypergraph model for cognitive capabilities. With its reduced dimensionality, this cognitive network model could be a potent enabler for cognitive digital twins to analyse complex industrial systems in real- time.<br><br>
+        
+          The gas turbine manufactured by Siemens Energy is considered a case study for this work. Being one of the most complex industrial systems, gas turbines would prove to be a compelling test case for the proposed cognitive network-based approach.<br><br>
+
+          
+          [1] Barriers to industrial energy efficiency. (n.d.). Retrieved May 2, 2023, from https://www.energy.gov/eere/amo/articles/barriers-industrial-energy-efficiency-report- congress-june-2015</p>
+          
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<hr>
+
+<!-- Nan Sun -->
+
+<div class="w3-row w3-padding-64" id="about">
+  <div class="w3-col m6 w3-padding-large w3-hide-small">
+   <img src="assets/nan_sun.jpg" class="modal-target w3-round w3-image w3-opacity-min" alt="Img 3" width="600" height="750">
+  </div>
+
+  <div class="w3-col m6 w3-padding-large">
+    <h2 class="w3-center">Decoding the Industry Ecosystems: Through Exploring the Evolution of Chinese Logistic Industry</h2><br>
+    <h5 class="w3-center"><a href="https://www.ifm.eng.cam.ac.uk/people/ns884/" target="_blank">Nan Sun</a></h5>
+    <p class="w3-large">In terms of research concerns, the study aims to propose an innovative industrial ecosystem framework to synthesise and guide competition and cooperation among players from the perspective of supporting the healthy and sustainable developmenth...</p>
+
+    <button class="button button1" onclick="nan_abstract_open()">Read More</button>   
+
+    <div id="nan_abstract" class="overlay">
+      <a href="javascript:void(0)" class="closebtn" onclick="nan_abstract_close()">&times;</a>
+      <div class="overlay-content">
+          <p><class="w3-large" style="color: white">
+            
+          <b><span style="text-transform:uppercase">Decoding the Industry Ecosystems: Through Exploring the Evolution of Chinese Logistic Industry</span></b><br><br>
+
+          In terms of research concerns, the study aims to propose an innovative industrial ecosystem framework to synthesise and guide competition and cooperation among players from the perspective of supporting the healthy and sustainable development of the logistics industry.<br><br>
+
+          In this presentation, I will demonstrate four aspects: 1) the development of the logistics industry in China, 2) the main issues facing the logistics industry, 3) my main focus in the subsequent research and 4) the research plan.</p>
+          
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<hr>
+
+
+<!-- Momoko Nakaoka -->
+
+<div class="w3-row w3-padding-64" id="about">
+  <div class="w3-col m6 w3-padding-large w3-hide-small">
+   <img src="assets/momoko_nakaoka.jpg" class="modal-target w3-round w3-image w3-opacity-min" alt="Img 3" width="600" height="750">
+  </div>
+
+  <div class="w3-col m6 w3-padding-large">
+    <h2 class="w3-center">Risk-aware Decision-Making Process of Hospital Facility Management</h2><br>
+    <h5 class="w3-center"><a href="https://www.ifm.eng.cam.ac.uk/people/mn551/" target="_blank">Momoko Nakaoka</a></h5>
+    <p class="w3-large">Acute hospitals are one of the most complicated facilities involving multiple players and spaces in dynamically evolving social and environmental context. Hospital Facility Management(HFM) covers a wide range of activities, such as maintenance of equipment, timely closure of non-clinical requests...</p>
+
+    <button class="button button1" onclick="momoko_abstract_open()">Read More</button>   
+
+    <div id="momoko_abstract" class="overlay">
+      <a href="javascript:void(0)" class="closebtn" onclick="momoko_abstract_close()">&times;</a>
+      <div class="overlay-content">
+          <p><class="w3-large" style="color: white">
+            
+          <b><span style="text-transform:uppercase">Risk-aware Decision-Making Process of Hospital Facility Management</span></b><br><br>
+
+          Acute hospitals are one of the most complicated facilities involving multiple players and spaces in dynamically evolving social and environmental context. Hospital Facility Management(HFM) covers a wide range of activities, such as maintenance of equipment, timely closure of non-clinical requests, repairs, and maintenance within the facility, ensuring high levels of cleanliness and hygiene, etc. As this activity typically includes overseeing budgets, personnel, facilities, and safety across departments, which creates huge maintenance backlogs, high maintenance cost and serious clinical intervention as well as negative impacts on Patients Clinical Outcomes (PCO) such as length of stay and patients’ health.<br><br>
+
+          Data-driven methods in HFM has a potential not only to collect, analyse, and visualise relevant data, but also to feed HFM data into the Decision-Making(DM) process to improve PCO. There are a plenty of studies to identify the bottlenecks of healthcare delivery from space use, facility layout and resource availability in the fields of transport/path planning, architectural morphology, and industrial engineering. However, few studies include critical assets that require performance assessment as resources (ex. building, room, HVAC system), consider performance factors of critical assets (ex. energy use, CO2 level, ventilation rate), and how the performance factors affect efficiency of healthcare delivery.<br><br>
+
+          Research question is that ‘how to develop a general DM process to improve CWE and some features of PCO using data-driven methods that supports information exchange between HFM and clinical departments. It contains creation of scenarios, selection of data-driven methods, description of integrated workflow, and proposal of common data environment. First objective is to develop the concept of Data-driven DM process to improve PCO using HFM data collected in different timespan and spaces. Second objective is to demonstrate the applicability of the Data-driven DM process using case studies. Third objective is to identify the potential and limitation and display the future steps of the DM process development.</p>
+          
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<hr>
+
+<!-- Cassandra Shand -->
+
+<div class="w3-row w3-padding-64" id="about">
+  <div class="w3-col m6 w3-padding-large w3-hide-small">
+   <img src="assets/cassandra_shand.jpg" class="modal-target w3-round w3-image w3-opacity-min" alt="Img 3" width="600" height="750">
+  </div>
+
+  <div class="w3-col m6 w3-padding-large">
+    <h2 class="w3-center">Bridging the Gap Between Business and Policy Strategy Tool Development: Towards a Comprehensive and Collaborative Framework
+    </h2><br>
+    <h5 class="w3-center"><a href="http://www.eng.cam.ac.uk/profiles/cns37" target="_blank">Cassandra Shand</a></h5>
+    <p class="w3-large">The development of business and public policy strategies are frequently considered separate and distinct processes, with existing development models often underestimating the potential impact of one domain on the other. However, as rapid innovation advances, the persistent lack of crossover...</p>
+
+    <button class="button button1" onclick="cassandra_abstract_open()">Read More</button>   
+
+    <div id="cassandra_abstract" class="overlay">
+      <a href="javascript:void(0)" class="closebtn" onclick="cassandra_abstract_close()">&times;</a>
+      <div class="overlay-content">
+          <p><class="w3-large" style="color: white">
+            
+          <b><span style="text-transform:uppercase">Bridging the Gap Between Business and Policy Strategy Tool Development: Towards a Comprehensive and Collaborative Framework
+          </span></b><br><br>
+
+          The development of business and public policy strategies are frequently considered separate and distinct processes, with existing development models often underestimating the potential impact of one domain on the other. However, as rapid innovation advances, the persistent lack of crossover between these spheres contributes to unnecessary stagnation in the innovation process and detached policy that inadvertently hinders innovation. The accelerating pace of innovation demands a more profound, collaborative understanding of business and policy environments and the conditions that facilitate efficient operation within both domains. This mutual understanding should be thoroughly integrated into contemporary business and policy design strategy models.<br><br>
+
+          Drawing on the existing literature on business and policy strategy model development, this research addresses the challenge of insufficient integration between business strategy and policy development. This analysis aims to provide a comprehensive understanding of how business and policy development tools are created and the conditions under which both can incorporate mutual understanding into their strategy models for effective business and policy design. By examining variables that may facilitate or impede the fusion of business strategy and policy development, this research will identify optimal points within existing development tools where the relationship between these two domains should be further considered to create more holistic strategy tools. This approach aims to enable a more informed decision-making process that accounts for the unique characteristics and requirements of each strategy domain, promoting successful integration of business and policy strategies. The ultimate objective of this research is to lay the groundwork for a more holistic approach to strategy development that accurately reflects the interplay between business strategy and policy development. By achieving this, the research aims to benefit policymakers and innovators alike by fostering the creation of informed, cohesive strategies that facilitate innovation and progress in both the private and public sectors, as well as promoting a more efficient allocation of resources and efforts between business and policy solutions.</p>
+          
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<hr>
+
+
+<!-- Luning Li -->
+
+<div class="w3-row w3-padding-64" id="about">
+  <div class="w3-col m6 w3-padding-large w3-hide-small">
+   <img src="assets/luning_li.jpg" class="modal-target w3-round w3-image w3-opacity-min" alt="Img 3" width="600" height="750">
+  </div>
+
+  <div class="w3-col m6 w3-padding-large">
+    <h2 class="w3-center">Smart Sensing Method for Low-cost & Green Data Collection</h2><br>
+    <h5 class="w3-center"><a href="https://www.ifm.eng.cam.ac.uk/people/ll669/" target="_blank">Luning Li</a></h5>
+    <p class="w3-large">IoT is a ubiquitous technology. It connects every physical object and enables relatively low-cost and large-scale data gathering from large volumes of sensors. Once a small piece of data is captured by a sensor, it will follow the IoT network and enters the vast IoT value chain to become value-added...</p>
+
+    <button class="button button1" onclick="luning_abstract_open()">Read More</button>   
+
+    <div id="luning_abstract" class="overlay">
+      <a href="javascript:void(0)" class="closebtn" onclick="luning_abstract_close()">&times;</a>
+      <div class="overlay-content">
+          <p><class="w3-large" style="color: white">
+            
+          <b><span style="text-transform:uppercase">Smart Sensing Method for Low-cost & Green Data Collection</span></b><br><br>
+
+          IoT is a ubiquitous technology. It connects every physical object and enables relatively low-cost and large-scale data gathering from large volumes of sensors. Once a small piece of data is captured by a sensor, it will follow the IoT network and enters the vast IoT value chain to become value-added information through data mining, decision models or/and AI models, and finally contribute to healthcare or business decisions or production management. In the past decades, IoT was widely applied in assets- intensive industries such as manufacturing, smart cities, automobile, smart home, healthcare, aerospace, etc. bringing revolutionary modifications to people’s work and life. However, obtaining the value-added information is not for free. Before getting the information, payment must be made to both physical (e.g. sensor, computer, server and network devices etc) and virtual worlds (e.g. bandwidth, memory, etc) for deployment, operation and maintenance.<br><br>
+
+          Nowadays, a few topics and projects are making an effort to lower the payment in IoT while ensuring IoT efficiency and sustainability. From the network side, green communication and Network (GCN) is advocating for ‘Send more valuable information bits with less energy (SMILE)’ to avoid data surge and energy waste. From the physical side, DIAL launched the ‘Digital Manufacturing on the shoestring’ project to lower SMEs’ digitalisation costs and threshold, which recently got IoT involved.<br><br>
+
+          From this point of view, my research is based on the above topic and background and tries to further lower the cost of IoT-based sensor networks. In the initial stage, this research will apply virtual sensors and machine learning, making opportunities to smart or even replace sensors in some cases to reduce the cost from the hardware side. Afterwards, this research will look at the information requirement and decision- making perspective to further optimise the cost while ensuring a certain performance and improving the sustainability of IoT-based data collection.</p>
+          
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<hr>
+
+
+<!-- Lishu Xia -->
+
+<div class="w3-row w3-padding-64" id="about">
+  <div class="w3-col m6 w3-padding-large w3-hide-small">
+   <img src="assets/lishu_xia.jpg" class="modal-target w3-round w3-image w3-opacity-min" alt="Img 3" width="600" height="750">
+  </div>
+
+  <div class="w3-col m6 w3-padding-large">
+    <h2 class="w3-center">Exploring the Configuration of Healthcare Supply Chains in Digital Platform Ecosystems</h2><br>
+    <h5 class="w3-center"><a href="https://www.ifm.eng.cam.ac.uk/people/085489/" target="_blank">Lishu Xia</a></h5>
+    <p class="w3-large">IoT is a ubiquitous technology. It connects every physical object and enables relatively low-cost and large-scale data gathering from large volumes of sensors. Once a small piece of data is captured by a sensor, it will follow the IoT network and enters the vast IoT value chain to become value-added...</p>
+
+    <button class="button button1" onclick="lishu_abstract_open()">Read More</button>   
+
+    <div id="lishu_abstract" class="overlay">
+      <a href="javascript:void(0)" class="closebtn" onclick="lishu_abstract_close()">&times;</a>
+      <div class="overlay-content">
+          <p><class="w3-large" style="color: white">
+            
+          <b><span style="text-transform:uppercase">Exploring the Configuration of Healthcare Supply Chains in Digital Platform Ecosystems</span></b><br><br>
+
+          The research aims to explore the rise of digital health service platforms as a novel phenomenon in the healthcare industry and their potential to reconfigure Healthcare Supply Chains (HSCs).<br><br>
+
+          The supply network structure and dynamics of these digital healthcare platform ecosystems, including coordination and integration mechanisms, represent a gap in the Operations Management (OM) field and is the focus of this research. The research approach will examine evolution pathways as platforms interact with established physical infrastructures. A configuration lens is adopted to look at changes to digital and physical supply networks (Srai and Gregory, 2008) and infrastructures (Joglekar et al., 2022), governance mechanisms, and product-service systems (Aurich et al., 2009).<br><br>
+
+          This study explores SC configuration design, within the context of multi-sided platforms in healthcare (Fürstenau et al., 2020), integrating platform economics and systems considerations. Specifically, we explore platform SCs in terms of changes to network configuration, integrating concepts of supply-side, demand-side, and cross- side network effects, and their implications on platform ecosystem evolution. An in- depth longitudinal case study of a leading digital health services platform will be conducted to explore how supply chain configurational changes have enabled platform evolution. This represents a longitudinal case study to provide insights into the features of platform-SC configuration that affect ecosystem evolution. System dynamics models will be explored to provide explanatory insights on ecosystem development. Multiple case studies of other digital healthcare platforms will be conducted to deduce generalized characteristics of platform-SC configuration.<br><br>
+
+          By applying the configurational approach to the digital health services SC context, this study seeks to provide a comprehensive framework for understanding the interplay between different components in a platform-SC configuration and illuminating the complex relationships between platform-SC configuration and digital platform ecosystem evolution.</p>
+          
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<hr>
+
+
+<!-- Christos Margadji -->
+
+<div class="w3-row w3-padding-64" id="about">
+  <div class="w3-col m6 w3-padding-large w3-hide-small">
+   <img src="assets/christos_margadji.jpg" class="modal-target w3-round w3-image w3-opacity-min" alt="Img 3" width="600" height="750">
+  </div>
+
+  <div class="w3-col m6 w3-padding-large">
+    <h2 class="w3-center">Scaling Quality Assurance in Additive Manufacturing via Transfer Learning</h2><br>
+    <h5 class="w3-center"><a href="https://www.ifm.eng.cam.ac.uk/people/cm2161/" target="_blank">Christos Margadji</a></h5>
+    <p class="w3-large">Additive manufacturing enables the production of extremely complex parts but suffers from frequent failure modes, limiting its potential in risk-averse applications. Recent developments have demonstrated how an AI can be deployed...</p>
+
+    <button class="button button1" onclick="christos_abstract_open()">Read More</button>   
+
+    <div id="christos_abstract" class="overlay">
+      <a href="javascript:void(0)" class="closebtn" onclick="christos_abstract_close()">&times;</a>
+      <div class="overlay-content">
+          <p><class="w3-large" style="color: white">
+            
+          <b><span style="text-transform:uppercase">Scaling Quality Assurance in Additive Manufacturing via Transfer Learning</span></b><br><br>
+
+          Additive manufacturing enables the production of extremely complex parts but suffers from frequent failure modes, limiting its potential in risk-averse applications. Recent developments have demonstrated how an AI can be deployed in the form of a closed- loop control system to detect and correct a diverse range of errors in real-time. Despite promising results, the performance of the control algorithm lacks when tested against unseen geometries which feature previously unseen characteristics. In this talk we will discuss how transfer learning can help optimize the developed framework on a specific geometry, to boost the quality of the applied corrections and hence of the final print itself. This requires a universal baseline model, minimal data from the target domain and a fraction of the original computational power for fine-tuning. The concept of optimizing the error-correction algorithm on one single part may be particularly useful in industrial applications, for which hundreds or even thousands of the same part need to be manufactured.</p>
+          
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<hr>
+
+
+<!-- Killian Manyuchi -->
+
+<div class="w3-row w3-padding-64" id="about">
+  <div class="w3-col m6 w3-padding-large w3-hide-small">
+   <img src="assets/killian_manyuchi.jpg" class="modal-target w3-round w3-image w3-opacity-min" alt="Img 3" width="600" height="750">
+  </div>
+
+  <div class="w3-col m6 w3-padding-large">
+    <h2 class="w3-center">Strategy and Project Portfolio Management in Capital- intensive Mining Firms</h2><br>
+    <h5 class="w3-center"><a href="https://www.ifm.eng.cam.ac.uk/people/ktm33/" target="_blank">Killian Manyuchi</a></h5>
+    <p class="w3-large">Capital allocation is critical for mining and metals businesses. Because of their finite and depleting nature, they require continuous reinvestment to yield justifiable returns. The most attractive ‘assets’ should form the core of the business, and the least attractive...</p>
+
+    <button class="button button1" onclick="killian_abstract_open()">Read More</button>   
+
+    <div id="killian_abstract" class="overlay">
+      <a href="javascript:void(0)" class="closebtn" onclick="killian_abstract_close()">&times;</a>
+      <div class="overlay-content">
+          <p><class="w3-large" style="color: white">
+            
+          <b><span style="text-transform:uppercase">Strategy and Project Portfolio Management in Capital- intensive Mining Firms</span></b><br><br>
+
+          Capital allocation is critical for mining and metals businesses. Because of their finite and depleting nature, they require continuous reinvestment to yield justifiable returns. The most attractive ‘assets’ should form the core of the business, and the least attractive sold, closed, or put under ‘care-and-maintenance’. Strategy and portfolio reviews represent the biggest opportunity for creating value. However, misalignment destroys it. Therefore, focusing on project portfolio management to remedy systemic deficiencies in investment and management, is vital. There are no studies in mining that appraise the link between strategy, projects, and project portfolio management. Yet the negative impact of poor portfolio decisions on performance can be significant.<br><br>
+
+          There is growing evidence of increasing project failures in capital intensive businesses, a high turnover of CEO’s and a reduction in their tenure of office. This research has tallied a total of 121 CEOs that have been sacked for lapses in strategy and portfolio failures, since 2000. Inspired by challenges of the executives to deliver enterprise value in the face of constrained capital, we address the problem of project portfolio management under deep complexity and uncertainty.<br><br>
+
+          Through the application of roadmapping, we demonstrate the strategic change and innovation needed to position capital intensive mining and metals firms project portfolios for value, taking a system-of-systems and full lifecycle perspective. The research identifies knowledge and practice gaps and develops a framework to enhance capital allocation and project portfolio success, across project typology and over time.</p>
+          
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<hr>
+
+
+<!-- Chen Ye -->
+
+<div class="w3-row w3-padding-64" id="about">
+  <div class="w3-col m6 w3-padding-large w3-hide-small">
+   <img src="assets/chen_ye.jpg" class="modal-target w3-round w3-image w3-opacity-min" alt="Img 3" width="600" height="750">
+  </div>
+
+  <div class="w3-col m6 w3-padding-large">
+    <h2 class="w3-center">Incoherence of Business Model Innovation in Digital Transformation</h2><br>
+    <h5 class="w3-center"><a href="https://www.ifm.eng.cam.ac.uk/people/cy333/" target="_blank">Chen Ye</a></h5>
+    <p class="w3-large">Firms face various challenges inbusiness model innovation (BMI) in digital transformation (DT). To study this problem, the coherence view of internal fit has been extensively studied in strategy and business models. In addition, a dialectical alternative to fit-based models of strategy emphasizes...</p>
+
+    <button class="button button1" onclick="chen_abstract_open()">Read More</button>   
+
+    <div id="chen_abstract" class="overlay">
+      <a href="javascript:void(0)" class="closebtn" onclick="chen_abstract_close()">&times;</a>
+      <div class="overlay-content">
+          <p><class="w3-large" style="color: white">
+            
+          <b><span style="text-transform:uppercase">Incoherence of Business Model Innovation in Digital Transformation</span></b><br><br>
+
+          Firms face various challenges inbusiness model innovation (BMI) in digital transformation (DT). To study this problem, the coherence view of internal fit has been extensively studied in strategy and business models. In addition, a dialectical alternative to fit-based models of strategy emphasizes the importance of “disciplined incoherence” for strategic renewal and transformation. However, few have drawn on systematic and empirical research into the nature of incoherence. Sorting incoherence into groups helps to understand its nature, especially its structure, and components. This research focuses on identification, classification, and relationship studies of the incoherence and relevant solutions in BMI in DT in firms. Based on the multi-case studies of interviews and workshops with firms in diverse industries, the researchers summarize 6 types of incoherence and 6 types of solutions, map different types of incoherence and solutions, and explore incoherence’s impacts such as making DT- driven BMI a cascade process that benefits not only a firm but also an ecosystem. Theoretically, this study classifies and maps different types of incoherence and relevant solutions, and contributes to the conceptual Business Model Cohesiveness Scorecard (BMCS) framework. Practically, this research aims to help managers clearly and accurately identify and understand the types of incoherence in BMI in DT in their firms, find appropriate solutions to manage the incoherence and have an in- depth understanding of the role that incoherence plays in BMI in DT.</p>
+          
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<hr>
+
+
+
+<!-- The Image Modal -->
+<div id="modal" class="modal">
+    <span id="modal-close" class="modal-close">&times;</span>
+    <img id="modal-content" class="modal-content">
+</div>
+
+<!-- End page content -->
+
+</body>
+
+<script src = "js/jquery.js"></script>
+<script src = "js/javascript.js"></script>
+</html>
