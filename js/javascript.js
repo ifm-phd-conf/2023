@@ -104,7 +104,7 @@ function paul_abstract_close() {
   document.getElementById("paul_abstract").style.display = "none";
   }
 
-function geofffrey_abstract_open() {
+function geoffrey_abstract_open() {
   document.getElementById("geoffrey_abstract").style.display = "block";
   }
 function geoffrey_abstract_close() {
